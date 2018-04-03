@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         EditText edit = findViewById(R.id.editText);
         final ShrinkedTextView textView = findViewById(R.id.shrinkedText);
+        //textView.setText("sadqweqeqwsadqweqeqwesadqweqeqwesadqweqeqwesadqweqeqwesadqweqsadqweqeqwesadqweqeqwee");
         edit.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                //textView.setText(charSequence);
+                textView.setText(charSequence);
             }
 
             @Override
